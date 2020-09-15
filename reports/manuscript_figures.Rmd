@@ -1,0 +1,23 @@
+---
+title: 'BBWM data archive'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      collapse = TRUE,
+                      warning = FALSE,
+                      message = FALSE,
+                      comment = "#>",
+                      fig.path = ("markdown-figs/manuscript/"))
+
+library(drake)
+```
+
+```{r dep, fig.height=5, fig.width=6}
+readd(gg_deposition_eb)
+```
+
+```{r streams, fig.height=8, fig.width=6}
+readd(gg_streams)
+```
+
