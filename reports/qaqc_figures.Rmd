@@ -1,0 +1,46 @@
+---
+title: "QA-QC figures"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      collapse = TRUE,
+                      warning = FALSE,
+                      message = FALSE,
+                      comment = "#>",
+                      fig.path = ("markdown-figs/qaqc/"))
+
+library(drake)
+```
+
+## DEPOSITION
+
+```{r dep_annual, fig.height=10, fig.width=15}
+readd(gg_dep_annual)
+```
+
+```{r dep_monthly, fig.height=10, fig.width=15}
+readd(gg_dep_monthly)
+```
+
+```{r dep_all, fig.height=10, fig.width=15}
+readd(gg_dep_all)
+```
+
+## STREAMS
+
+```{r streams_annual, fig.height=10, fig.width=15}
+readd(gg_streams_annual)
+```
+
+```{r streams_monthly, fig.height=10, fig.width=15}
+readd(gg_streams_monthly)
+```
+
+```{r streams_all, fig.height=10, fig.width=15}
+readd(gg_streams_all)
+```
+
+
+
+## SOILS
